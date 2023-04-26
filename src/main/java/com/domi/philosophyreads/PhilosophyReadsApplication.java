@@ -1,5 +1,7 @@
 package com.domi.philosophyreads;
 
+import com.domi.philosophyreads.entities.Philospoher;
+import com.domi.philosophyreads.entities.enums.Nationality;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

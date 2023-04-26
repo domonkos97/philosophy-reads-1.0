@@ -22,4 +22,15 @@ public class Philospoher {
     private Date birthDate;
     private Date deathDate;
     private Nationality nationality;
+
+    @Override
+    public String toString(){
+        return "User{" +'\n' +
+                "id=" + id + "," + '\n' +
+                "name=" + name +"," + '\n' +
+                "books=" + books + "," +'\n' +
+                "birthDate=" + birthDate +"," + '\n' +
+                "deathDate=" + deathDate + "," +'\n' +
+                "nationality=" + nationality +'\n' + "}";
+    }
 }

@@ -15,4 +15,12 @@ public class Book {
     @ManyToOne
     private Philospoher author;
 
+    public String toString(){
+        return "User{" +'\n' +
+                "id=" + id + "," + '\n' +
+                "title=" + title +"," + '\n' +
+                "synopsis=" + synopsis + "," +'\n' +
+                "author=" + author +"," + '\n' + "}";
+    }
+
 }
