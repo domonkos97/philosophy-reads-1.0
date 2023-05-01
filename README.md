@@ -19,8 +19,6 @@ To run the application locally, follow these steps:
 - View a list of all books or only the books you have marked as read
 - Search for books by keyword
 - View information about authors and their other works
-<!-- Create a new book entry
-Edit or delete existing book entries -->
 
 #### Technologies Used
 
