@@ -21,4 +21,8 @@ public class PhilosopherService {
         Sort sortByTitleDesc = Sort.by(Sort.Direction.DESC, "name");
         return philosopherRepository.findAll(sortByTitleDesc);
     }
+
+    public Philosopher getPhilosopherById(Long id) {
+        return philosopherRepository.getReferenceById(id);
+    }
 }

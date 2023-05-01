@@ -4,6 +4,7 @@ import com.domi.philosophyreads.entities.Philosopher;
 import com.domi.philosophyreads.service.PhilosopherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,5 +21,10 @@ public class PhilosopherController {
     @GetMapping
     public List<Philosopher> getAllPhilosopher() {
         return philosopherService.getAllPhilosophers();
+    }
+
+    @GetMapping("/{id}")
+    public Philosopher getPhilosopherById(@PathVariable Long id) {
+        return philosopherService.getPhilosopherById(id);
     }
 }
