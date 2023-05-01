@@ -29,6 +29,10 @@ public class BookService {
         return bookRepository.getReferenceById(id);
     }
 
+    public List<Book> getBooksByAuthorId(Long id) {
+        return bookRepository.getBooksByAuthorId(id);
+    }
+
     public void addBook(BookDto bookDto){
         Book book = new Book();
         book.setId(bookDto.getId());
