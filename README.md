@@ -14,21 +14,17 @@ To run the application locally, follow these steps:
 
 #### Features
 
-Philosophy Reads has the following features:
-
-Browse philosophy books by author, title or category
-Mark books as read or unread
-View a list of all books or only the books you have marked as read
-Search for books by keyword
+- Browse philosophy books by author, title or category
+- Mark books as read or unread
+- View a list of all books or only the books you have marked as read
+- Search for books by keyword
 <!-- Create a new book entry
 Edit or delete existing book entries -->
-View information about authors and their other works
+- View information about authors and their other works
 
 #### Technologies Used
 
-Philosophy Reads uses the following technologies:
-
-Java Spring for the backend server
-React for the frontend user interface
-PostgreSQL for the database
-Git and GitHub for version control and collaboration
+- Java Spring for the backend server
+- React for the frontend user interface
+- PostgreSQL for the database
+- Git and GitHub for version control and collaboration
