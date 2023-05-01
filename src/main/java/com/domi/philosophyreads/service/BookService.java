@@ -25,4 +25,8 @@ public class BookService {
     public Book getBookById(Long id) {
         return bookRepository.getReferenceById(id);
     }
+
+    public void addBook(Book book){
+        bookRepository.save(book);
+    }
 }
