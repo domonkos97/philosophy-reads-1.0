@@ -25,4 +25,8 @@ public class PhilosopherService {
     public Philosopher getPhilosopherById(Long id) {
         return philosopherRepository.getReferenceById(id);
     }
+
+    public void addPhilosopher() {
+        throw new UnsupportedOperationException("method not implemented yet :(");
+    }
 }

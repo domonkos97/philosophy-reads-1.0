@@ -14,6 +14,5 @@ public class BookDto {
     private Long id;
     private String title;
     private String synopsis;
-    @ManyToOne
     private Long authorId;
 }
