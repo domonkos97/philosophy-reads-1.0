@@ -12,7 +12,7 @@ import java.util.List;
 
 @Entity
 @Data
-public class Philospoher {
+public class Philosopher {
     @Id
     @GeneratedValue
     private Long id;

@@ -13,7 +13,7 @@ public class Book {
     private String title;
     private String synopsis;
     @ManyToOne
-    private Philospoher author;
+    private Philosopher author;
 
     public String toString(){
         return "User{" +'\n' +
