@@ -1,11 +1,10 @@
 package com.domi.philosophyreads.controller;
 
 import com.domi.philosophyreads.entities.Book;
+import com.domi.philosophyreads.entities.dto.BookDto;
 import com.domi.philosophyreads.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,5 +22,15 @@ public class BookController {
     @GetMapping
     public List<Book> getAllBooks() {
         return bookService.getAllBooks();
+    }
+
+    @GetMapping("/{id}")
+    public Book getBookById(@PathVariable Long id) {
+        return bookService.getBookById(id);
+    }
+
+    @PostMapping("/add")
+    public void addBook(@RequestBody BookDto bookDto) {
+        bookService.addBook(bookDto);
     }
 }

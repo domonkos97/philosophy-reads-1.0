@@ -1,13 +1,13 @@
 package com.domi.philosophyreads.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
 @Data
-public class Book {
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+    public class Book {
     @Id
     private Long id;
     private String title;

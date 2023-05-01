@@ -19,8 +19,8 @@ public class Philosopher {
     private String name;
     @OneToMany
     private List<Book> books;
-    private Date birthDate;
-    private Date deathDate;
+    private Long birthDate;
+    private Long deathDate;
     private Nationality nationality;
 
     @Override
