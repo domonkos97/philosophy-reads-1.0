@@ -1,8 +1,5 @@
 package com.domi.philosophyreads.entities.dto;
 
-import com.domi.philosophyreads.entities.Philosopher;
-import jakarta.persistence.Entity;
-import jakarta.persistence.ManyToOne;
 import lombok.*;
 
 @Setter

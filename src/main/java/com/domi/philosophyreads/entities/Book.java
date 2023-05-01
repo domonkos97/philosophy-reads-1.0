@@ -13,7 +13,7 @@ import lombok.Data;
     private String title;
     private String synopsis;
     @ManyToOne
-    private Philosopher author;
+    private Author author;
 
     public String toString(){
         return "User{" +'\n' +
