@@ -31,6 +31,7 @@ public class BookService {
 
     public void addBook(BookDto bookDto){
         Book book = new Book();
+        book.setId(bookDto.getId());
         book.setAuthor(philosopherService.getPhilosopherById(bookDto.getAuthorId()));
         book.setSynopsis(bookDto.getSynopsis());
         book.setTitle(bookDto.getTitle());

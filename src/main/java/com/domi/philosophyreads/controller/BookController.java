@@ -1,6 +1,7 @@
 package com.domi.philosophyreads.controller;
 
 import com.domi.philosophyreads.entities.Book;
+import com.domi.philosophyreads.entities.dto.BookDto;
 import com.domi.philosophyreads.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -29,7 +30,7 @@ public class BookController {
     }
 
     @PostMapping("/add")
-    public void addBook(@RequestBody Book book) {
-        bookService.addBook(book);
+    public void addBook(@RequestBody BookDto bookDto) {
+        bookService.addBook(bookDto);
     }
 }

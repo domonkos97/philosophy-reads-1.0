@@ -11,6 +11,7 @@ import lombok.*;
 @AllArgsConstructor
 @Data
 public class BookDto {
+    private Long id;
     private String title;
     private String synopsis;
     @ManyToOne
