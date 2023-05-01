@@ -7,12 +7,11 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import lombok.Data;
 
-import java.util.Date;
 import java.util.List;
 
 @Entity
 @Data
-public class Philosopher {
+public class Author {
     @Id
     @GeneratedValue
     private Long id;

@@ -34,7 +34,7 @@ public class BookController {
         bookService.addBook(bookDto);
     }
 
-    @GetMapping("/philosopher/{id}")
+    @GetMapping("/author/{id}")
     public List<Book> getBooksByAuthorId(@PathVariable Long id) {
         return bookService.getBooksByAuthorId(id);
     }

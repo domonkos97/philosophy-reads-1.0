@@ -12,12 +12,12 @@ import java.util.List;
 @Service
 public class BookService {
     private final BookRepository bookRepository;
-    private final PhilosopherService philosopherService;
+    private final AuthorService authorService;
 
     @Autowired
-    public BookService(BookRepository bookRepository, PhilosopherService philosopherService) {
+    public BookService(BookRepository bookRepository, AuthorService authorService) {
         this.bookRepository = bookRepository;
-        this.philosopherService = philosopherService;
+        this.authorService = authorService;
     }
 
     public List<Book> getAllBooks() {
@@ -36,7 +36,7 @@ public class BookService {
     public void addBook(BookDto bookDto){
         Book book = new Book();
         book.setId(bookDto.getId());
-        book.setAuthor(philosopherService.getPhilosopherById(bookDto.getAuthorId()));
+        book.setAuthor(authorService.getAuthorById(bookDto.getAuthorId()));
         book.setSynopsis(bookDto.getSynopsis());
         book.setTitle(bookDto.getTitle());
         bookRepository.save(book);
