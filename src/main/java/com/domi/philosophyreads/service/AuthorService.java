@@ -28,6 +28,12 @@ public class AuthorService {
     }
 
     public void addAuthor(AuthorDto authorDto) {
-        throw new UnsupportedOperationException("method not implemented yet :(");
+        Author author = new Author();
+        author.setName(authorDto.getName());
+        author.setId(authorDto.getId());
+        author.setNationality(authorDto.getNationality());
+        author.setBirthDate(authorDto.getBirthDate());
+        author.setDeathDate(authorDto.getDeathDate());
+        authorRepository.save(author);
     }
 }
