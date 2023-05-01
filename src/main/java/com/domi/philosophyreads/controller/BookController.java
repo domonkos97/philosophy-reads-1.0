@@ -33,4 +33,9 @@ public class BookController {
     public void addBook(@RequestBody BookDto bookDto) {
         bookService.addBook(bookDto);
     }
+
+    @GetMapping("/philosopher/{id}")
+    public List<Book> getBooksByAuthorId(@PathVariable Long id) {
+        return bookService.getBooksByAuthorId(id);
+    }
 }
