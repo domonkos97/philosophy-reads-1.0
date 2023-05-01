@@ -24,4 +24,9 @@ public class BookController {
     public List<Book> getAllBooks() {
         return bookService.getAllBooks();
     }
+
+    @GetMapping
+    public Book getBookById(Long id) {
+        return bookService.getBookById(id);
+    }
 }

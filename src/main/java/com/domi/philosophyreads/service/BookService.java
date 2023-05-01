@@ -21,4 +21,8 @@ public class BookService {
         Sort sortByTitleDesc = Sort.by(Sort.Direction.DESC, "title");
         return bookRepository.findAll(sortByTitleDesc);
     }
+
+    public Book getBookById(Long id) {
+        return bookRepository.getReferenceById(id);
+    }
 }
