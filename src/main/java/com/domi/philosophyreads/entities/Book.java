@@ -1,12 +1,10 @@
 package com.domi.philosophyreads.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
 @Data
-@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     public class Book {
     @Id
     private Long id;
