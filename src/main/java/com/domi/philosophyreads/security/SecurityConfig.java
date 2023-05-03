@@ -21,8 +21,9 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         return httpSecurity
                 .authorizeRequests(authorizeConfig -> {
-                    authorizeConfig.requestMatchers("/api/authors").authenticated();
-                    authorizeConfig.anyRequest().permitAll();
+                    authorizeConfig.requestMatchers("/error").permitAll();
+                    authorizeConfig.requestMatchers("/api/books/**").permitAll();
+                    authorizeConfig.anyRequest().authenticated();
                 })
                 .formLogin(withDefaults())
                 .build();
@@ -33,7 +34,7 @@ public class SecurityConfig {
         return new InMemoryUserDetailsManager(
                 User.builder()
                         .username("user")
-                        .password("password")
+                        .password("{noop}password")
                         .authorities("ROLE_user")
                         .build()
         );
