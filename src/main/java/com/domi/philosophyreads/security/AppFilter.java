@@ -17,5 +17,6 @@ public class AppFilter extends OncePerRequestFilter {
             HttpServletResponse response,
             FilterChain filterChain) throws ServletException, IOException {
         System.out.println("Filter is initiated");
+        filterChain.doFilter(request, response);
     }
 }
