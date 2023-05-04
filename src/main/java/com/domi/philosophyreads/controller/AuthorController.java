@@ -3,7 +3,6 @@ package com.domi.philosophyreads.controller;
 import com.domi.philosophyreads.entities.Author;
 import com.domi.philosophyreads.entities.dto.AuthorDto;
 import com.domi.philosophyreads.service.AuthorService;
-import com.nimbusds.jose.proc.SecurityContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.neo4j.Neo4jProperties;
 import org.springframework.security.core.Authentication;
