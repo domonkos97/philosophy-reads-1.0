@@ -19,13 +19,24 @@ public class LoginAuthFilter extends UsernamePasswordAuthenticationFilter {
     public LoginAuthFilter(AuthenticationManager authenticationManager) {
         this.authenticationManager = authenticationManager;
     }
+
+    /**
+        The attemptAuthentication method is responsible for attempting to authenticate the user
+        with the given credentials (i.e. username and password)
+        and returning an Authentication object representing the authenticated user on success.
+        If the authentication fails, it will throw an AuthenticationException.
+     */
     @Override
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException {
+        //
         throw new UnsupportedOperationException("method not implemented yet");
     }
-
+    /**
+     The successfulAuthentication method is called after the attemptAuthentication method successfully authenticates the user.
+     It is responsible for creating the JWT token, setting it in the response cookie, and sending the response to the client.
+     */
     @Override
     public void successfulAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain, Authentication authResult) throws IOException {
-        throw new UnsupportedEncodingException("mothod not implemented yet");
+        throw new UnsupportedEncodingException("method not implemented yet");
     }
 }
