@@ -15,6 +15,10 @@ import java.io.UnsupportedEncodingException;
 
 public class LoginAuthFilter extends UsernamePasswordAuthenticationFilter {
 
+    /**
+        The AuthenticationManager interface in Spring Security is responsible for authenticating an Authentication object,
+        which represents the user's credentials.
+     */
     private final AuthenticationManager authenticationManager;
     public LoginAuthFilter(AuthenticationManager authenticationManager) {
         this.authenticationManager = authenticationManager;
